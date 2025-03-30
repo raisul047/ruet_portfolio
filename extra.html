@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra Curricular Activities</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hidesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="media.html">Gallery</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="extra.html">Activities</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <img src="logo.jpg" class="logo">
+            <ul>
+                <li class="hideonmobile"><a href="index.html">Home</a></li>
+                <li class="hideonmobile"><a href="about.html">About</a></li>
+                <li class="hideonmobile"><a href="project.html">Projects</a></li>
+                <li class="hideonmobile"><a href="media.html">Gallery</a></li>
+                <li class="hideonmobile"><a href="education.html">Education</a></li>
+                <li class="hideonmobile"><a href="extra.html">Activities</a></li>
+                <li class="hideonmobile"><a href="experience.html">Experience</a></li>
+                <li class="hideonmobile"><a href="contact.html">Contact</a></li>
+                <li onclick=showsidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -1200 960 960" width="26x" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+<section id="activities">
+        <div class="container">
+            <h1 class="sub-title">Extracurricular Activities</h1>
+            <p>Beyond academics, I am actively engaged in various organizations that enhance my technical and leadership skills.</p>
+            
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <h2>IoT Club - RUET</h2>
+                    <p>Active member contributing to IoT-based projects, workshops, and hackathons, exploring innovations in smart technologies.</p>
+                </div>
+    
+                <div class="activity-card">
+                    <h2>Islamic Society of RUET</h2>
+                    <p>Engaged in community service, organizing events, and participating in discussions that promote ethical values and leadership.</p>
+                </div>
+    
+                <div class="activity-card">
+                    <h2>Robotics Society</h2>
+                    <p>Participated in national robotics competitions, building autonomous bots and collaborating on cutting-edge automation projects.</p>
+                </div>
+    
+                <div class="activity-card">
+                    <h2>Programming Club</h2>
+                    <p>Regular contestant in coding competitions, mentoring juniors, and developing problem-solving skills through algorithmic challenges.</p>
+                </div>
+    
+                <div class="activity-card">
+                    <h2>Sports Club</h2>
+                    <p>Represented RUET in inter-university football tournaments, promoting teamwork and discipline on and off the field.</p>
+                </div>
+    
+                <div class="activity-card">
+                    <h2>Debate Club</h2>
+                    <p>Engaged in national debate tournaments, enhancing communication, critical thinking, and persuasive speaking abilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 All rights reserved by Raisul Islam.</p>
+    </footer>
+    <script>
+        function showsidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hidesidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>
